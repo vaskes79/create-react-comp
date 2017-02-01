@@ -4,7 +4,20 @@
   "description": "cli tools for quik creating react component",
   "main": "index.js",
   "repository": "https://github.com/vaskes79/create_react_comp.git",
-  "author": "Vasily Guzov",
+  "author": {
+    "name": "Vasily Guzov",
+    "email": "kinev1979@gmail.com"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "crc": "./bin/crc"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "os": [
+    "linux"
+  ],
   "license": "MIT",
   "dependencies": {
     "optimist": "^0.6.1"
