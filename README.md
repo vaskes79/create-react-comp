@@ -4,7 +4,7 @@
 ## install
 
 
-        npm i -g create_react_comp
+        npm i -g create_react_component
 
 ## usage
 create component with state

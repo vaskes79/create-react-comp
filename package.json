@@ -1,6 +1,6 @@
 {
   "name": "create_react_component",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "cli tools for quik creating react component",
   "main": "index.js",
   "repository": "https://github.com/vaskes79/create_react_comp.git",
