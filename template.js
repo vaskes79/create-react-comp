@@ -9,8 +9,9 @@ module.exports = function(COMPONENT_NAME, stateles = false) {
     const INDEX_JS = `import ${COMPONENT_NAME} from './${jsx}'
 export default ${COMPONENT_NAME};
     `
-    const COMP_JSX = `import React, { Component } from 'react';
-import './${css}';
+    const COMP_JSX = `import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import './${css}'
 
 
 class ${COMPONENT_NAME} extends Component {
@@ -25,29 +26,30 @@ class ${COMPONENT_NAME} extends Component {
 export default ${COMPONENT_NAME};
 `
 
-    let COMP_STATELESS_JSX = `import React  from 'react';
-import './${css}';
+    let COMP_STATELESS_JSX = `import React  from 'react'
+import PropTypes from 'prop-types'
+import './${css}'
 
 
-const ${COMPONENT_NAME} = (props) => {
-    let {} = props;
+const ${COMPONENT_NAME} = ({  }) => {
+    
     return (
         <div className="${COMPONENT_NAME}">
         </div>
     )
-};
+}
 
 ${COMPONENT_NAME}.propTypes = {
-};
+}
 
 ${COMPONENT_NAME}.defaultProps = {
-};
+}
 
 
 export default ${COMPONENT_NAME};
 `
 
-    let COMP_CSS = ` .${COMPONENT_NAME} { }`
+    let COMP_CSS = `.${COMPONENT_NAME} {}`
 
     return [
         { 
