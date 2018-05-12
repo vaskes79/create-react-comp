@@ -1,2 +1,2 @@
 #!/usr/bin/env node
-require('../create_components.js');
+require('../dist/index.js');

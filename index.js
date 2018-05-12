@@ -1,1 +1,1 @@
-module.exports = require('./create_components.js');
+module.exports = require('./dist');
