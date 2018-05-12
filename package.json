@@ -1,6 +1,6 @@
 {
   "name": "create_react_component",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "cli tools for quik creating react component",
   "main": "index.js",
   "repository": "https://github.com/vaskes79/create_react_comp.git",
@@ -8,7 +8,9 @@
     "name": "Vasily Guzov",
     "email": "kinev1979@gmail.com"
   },
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "preferGlobal": true,
   "bin": {
     "crc": "./bin/crc"
@@ -16,12 +18,16 @@
   "scripts": {
     "prepublishOnly": "npm run build",
     "clean": "rimraf dist",
-    "build": "npm run clean && babel src -d dist"
+    "build": "npm run clean && babel src -d dist",
+    "pub": "npm version patch && npm publish"
   },
   "engines": {
     "node": ">= 5.0.0"
   },
-  "os": ["darwin", "linux"],
+  "os": [
+    "darwin",
+    "linux"
+  ],
   "license": "MIT",
   "dependencies": {
     "optimist": "^0.6.1"
