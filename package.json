@@ -1,6 +1,6 @@
 {
   "name": "create_react_component",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "cli tools for quik creating react component",
   "main": "index.js",
   "repository": "https://github.com/vaskes79/create_react_comp.git",
@@ -13,7 +13,7 @@
   ],
   "preferGlobal": true,
   "bin": {
-    "crc": "./bin/crc"
+    "crc": "./dist/bin/crc"
   },
   "scripts": {
     "prepublishOnly": "npm run clean && npm run build",
