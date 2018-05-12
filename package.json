@@ -8,18 +8,28 @@
     "name": "Vasily Guzov",
     "email": "kinev1979@gmail.com"
   },
+  "files": ["dist"],
   "preferGlobal": true,
   "bin": {
     "crc": "./bin/crc"
   },
-  "engines": {
-    "node": ">= 4.0.0"
+  "scripts": {
+    "prepublishOnly": "npm run build",
+    "clean": "rimraf dist",
+    "build": "npm run clean && babel src -d dist"
   },
-  "os": [
-    "linux"
-  ],
+  "engines": {
+    "node": ">= 5.0.0"
+  },
+  "os": ["darwin", "linux"],
   "license": "MIT",
   "dependencies": {
     "optimist": "^0.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }
