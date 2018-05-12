@@ -4,7 +4,7 @@
 
 ## install
 
-````bash
+```bash
 npm i -g create_react_component
 ```
 
